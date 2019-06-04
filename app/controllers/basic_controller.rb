@@ -9,7 +9,7 @@ class BasicController < ApplicationController
     # system("/home/xrasto/tmp/testa.sh " + "'" + params[:kolla] + "'")
     # system("/home/xrasto/tmp/testa.sh " + "'" + params[:basic].inspect + "'")
     # -------------------------------------------------- #
-    # CONTROL row
+    # CONTROL row, and again
     # -------------------------------------------------- #
     #system("/home/apps/bin/testa.sh")
 	system("ssh sysed@fra.ub.gu.se /home/sysed/bin/sprintstatus/getLastSprint.sh")
