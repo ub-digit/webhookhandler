@@ -12,6 +12,7 @@ set :tmp_dir, '/home/apps/tmp'
 
 # Copy originals into /{app}/shared/config from respective sample file
 # set :linked_files, %w{}
+set :linked_files, %w{config/master.key }
 
 set :rvm_ruby_version, '2.6.0'      # Defaults to: 'default'
 
