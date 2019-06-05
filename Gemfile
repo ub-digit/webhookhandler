@@ -31,6 +31,8 @@ group :development do
   gem 'capistrano-passenger'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 
 group :test do
