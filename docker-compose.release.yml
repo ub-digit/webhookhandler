@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  webhookhandler:
+    image: docker.ub.gu.se/webhookhandler:${VERSION}
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://127.0.0.1:514"
+        syslog-format: "rfc5424"
+        syslog-facility: ${SYSLOG_FACILITY}
+        tag: ${SYSLOG_TAG_WEB}

@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  webhookhandler:
+    image: docker.ub.gu.se/rails:ruby-2.5.8-002
+    volumes:
+      - ./:/usr/src/app

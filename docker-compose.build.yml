@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  webhookhandler:
+    image: docker.ub.gu.se/webhookhandler:${VERSION}
+    build:
+      context: .

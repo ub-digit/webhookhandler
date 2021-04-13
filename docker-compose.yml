@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  webhookhandler:
+    volumes:
+      - ${SSH_DIR}:/root/.ssh
+    environment:
+      - RAILS_ENV=${RAILS_ENVIRONMENT}
+      - RAILS_PORT=${WEBHOOKHANDLER_RAILS_PORT}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
+    command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+    ports:
+      - ${WEBHOOKHANDLER_PORT}:${WEBHOOKHANDLER_RAILS_PORT}
