@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   webhookhandler:
+    restart: always  
     volumes:
       - ${SSH_DIR}:/root/.ssh
     environment:
